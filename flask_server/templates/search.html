@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}数据查询{% endblock %}
+
+{% block page_content %}
+{%if user_list%}
+<div class="col-sm-12 text-default top-margin">
+    <div class="top-margin col-sm-5 row">
+        <div class="col-sm-12">
+            <div class="form-group row">
+                <label style="white-space: pre" class="col-sm-3 col-xs-2" >用户名 ：</label>
+                <input type="text" class="col-sm-6 col-xs-4" id="search_username"
+                       placeholder="请输入需要查询的用户昵称或用户id" name="search_username"/>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row form-group">
+                <label style="white-space: pre" class="col-sm-3 col-xs-2" >关键词搜索 ：</label>
+                <input type="text" class="col-sm-6 col-xs-4" id="search_keyword"
+                       placeholder="请输入需要查询的关键词" name="search_keyword"/>
+
+            </div>
+        </div>
+        <button style="left-padding:20% right-padding:20%" id="search_weibo_btn" type="button" class="btn btn-default left-padding right-padding col-sm-offset-5">
+            搜索
+        </button>
+    </div>
+    <p id="search_tip" style="display:none" class="col-sm-12">查询中...</p>
+    <div id="display_grid" class="col-sm-12 row" style="display:none">
+
+
+    </div>
+</div>
+{%endif%}
+{% endblock %}

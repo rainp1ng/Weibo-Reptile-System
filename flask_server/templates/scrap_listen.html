@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}微博爬虫任务{% endblock %}
+
+{% block page_content %}
+{%if user_list%}
+<br/>
+<br/>
+<div class="col-sm-12 text-default top-margin">
+    <div id="scrap_listen_div">
+
+    </div>
+</div>
+<input type="hidden" id="sd" value="{{scrap_id}}"/>
+{%endif%}
+{% endblock %}
