@@ -4,8 +4,8 @@ import MySQLdb
 
 
 HOST = "localhost"
-USER = "root"
-PASSWD = 'wwwscuteducn'  # raw_input('mysql password:').strip()
+USER = "USER"
+PASSWD = 'PASSWD'  # raw_input('mysql password:').strip()
 PORT = 3306
 CHARSET = "utf8"
 
